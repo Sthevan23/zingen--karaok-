@@ -28,9 +28,8 @@
     );
     --btn-color: var(--surface-color);
 
-    -webkit-background-clip: text;
+    -webkit-background-clip: initial;
     background-clip: initial;
-
     color: var(--btn-color);
 } 
 .btn-sm {
@@ -60,8 +59,8 @@
   &::after {
     content:attr(aria-label);
     background: var(--btn-bg-color);
-    -webkit-background-clip: initial;
-    background-clip: initial;
+    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     position: relative;
     z-index: 1;
@@ -71,11 +70,11 @@
 
   @media (width>= 80em) {
 
-    .btn-sm{
+    .btn-sm {
       padding: .75rem 1.5rem;
       font-size: var(--fs-base);
     }
-    .btn-md{
+    .btn-md { 
       padding: 1rem 2rem;
       font-size: 1.125rem;
     }
