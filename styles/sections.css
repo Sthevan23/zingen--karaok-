@@ -16,13 +16,12 @@ section {
     }
     & h2 {
       margin-top: .5rem;
-
     }
   }
 
   & p {
     margin-top: .5rem;
-    counter-reset: var(--text-color-secondary);
+    color: var(--text-color-secondary);
   }
 }
 
